@@ -10,7 +10,7 @@ $('document').ready(()=>{
                     $('.pote').text("Potencia: " + $('#potencia').val());
                     $.ajax({
                         type: "GET",
-                        url: "backend/setStatusRange.php",
+                        url: "https://ihc-dlk.000webhostapp.com/backend/setStatusRange.php",
                         data: dataS,
                         success: function(res2){
                             console.log(res2);  
@@ -57,7 +57,7 @@ recognition.lang = "es-MX";
                     e.preventDefault();
                     $.ajax({
                         type: "GET",
-                        url: "backend/setStatusRange.php",
+                        url: "https://ihc-dlk.000webhostapp.com/backend/setStatusRange.php",
                         data: dataS,
                         success: function(res){
                             console.log(res);   
@@ -129,7 +129,7 @@ recognition.lang = "es-MX";
 function repe(){
     $.ajax({
         type: "GET",
-        url: "backend/historial.php",
+        url: "https://ihc-dlk.000webhostapp.com/backend/historial.php",
         success: function(res){
             let arr = JSON.parse(res);
             grafica(arr.graf);
@@ -141,7 +141,7 @@ function tata(){
     $('#history').DataTable({
         "ajax":{
             "method":"POST",
-            "url":"backend/historial.php"
+            "url":"https://ihc-dlk.000webhostapp.com/backend/historial.php"
         },
         "columns":[
             {"data":"id"},

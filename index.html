@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Recognition Voice</title>
+</head>
+<body>
+    <nav class="navbar" style="background-color: rgb(89, 141, 253);">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: black; font-weight: bold; font-size: xx-large;">
+              <img src="img/v2.webp" alt="" width="60" height="60" class="d-inline-block align-text-top">
+              INTERACCIÓN HUMANO Y COMPUTADORA
+            </a>
+        </div>
+    </nav>    
+    <section>
+        <div class ="mx-3">
+            <h1>Speech<br> Recognition</h1>
+            <p id="compatible"></p>
+        </div>        
+        <div class="container">
+            <h1 class="pote">Potencia: 0</h1>
+            <h3 id="mensaje"></h3>
+        </div>
+        <div class ="mx-5 px-3">
+            <input class="mx-5" type="range" name="" id="potencia" min="0" max="100" value="0">
+        </div>        
+    </section>
+    <div class="container my-5">
+        <table id="history" class="display table-striped table-hover">
+            <thead>
+                <tr class="table-info">
+                    <th>No.</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <div class="container-sm my-5">
+        <div id="gra" class = "mx-5" style="width: 900px; height: 500px"></div>
+    </div>
+    <footer class="footer mt-5">
+        <div class="text-center p-4" style="background-color: rgb(89, 141, 253);">
+            © 2021 Copyright: Jaén Galván Uriel | Duran Lugo Karen
+        </div>
+   </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"
+        integrity="sha512-suUtSPkqYmFd5Ls30Nz6bjDX+TCcfEzhFfqjijfdggsaFZoylvTj+2odBzshs0TCwYrYZhQeCgHgJEkncb2YVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -13,22 +13,40 @@
         <div class="container-fluid">
             <a class="navbar-brand" style="color: black; font-weight: bold; font-size: xx-large;">
               <img src="img/v2.webp" alt="" width="60" height="60" class="d-inline-block align-text-top">
-              INTERACCIÓN HUMANO Y COMPUTADORA
+              INTERACCIÓN HUMANO - COMPUTADORA
             </a>
         </div>
     </nav>    
     <section>
-        <div class ="mx-3">
-            <h1>Speech<br> Recognition</h1>
-            <p id="compatible"></p>
-        </div>        
-        <div class="container">
-            <h1 class="pote">Potencia: 0</h1>
-            <h3 id="mensaje"></h3>
+        <div class ="container-fluid mt-3">
+            <div class="row">
+                <div class="col order-last"></div>
+                <div class="col">
+                    <h1 class="mx-4">Speech Recognition</h1>
+                    <p id="compatible"></p>
+                </div><div class="col order-first">
+                </div>                           
+            </div>            
         </div>
-        <div class ="mx-5 px-3">
-            <input class="mx-5" type="range" name="" id="potencia" min="0" max="100" value="0">
-        </div>        
+        <div class ="container-fluid mt-3">
+            <div class="row">
+                <div class="col-3 order-last"></div>
+                <div class="col">
+                    <h1 class="pote mx-5">Potencia: 0</h1>
+                    <h3 id="mensaje"></h3>
+                </div><div class="col order-first">
+                </div>                           
+            </div>            
+        </div> 
+        <div class ="container-fluid mt-3">
+            <div class="row">
+                <div class="col-3 order-last"></div>
+                <div class="col">
+                    <input class="mx-5" type="range" name="" id="potencia" min="0" max="100" value="0">
+                </div><div class="col order-first">
+                </div>                           
+            </div>            
+        </div>       
     </section>
     <div class="container my-5">
         <table id="history" class="display table-striped table-hover">
@@ -41,8 +59,14 @@
             </thead>
         </table>
     </div>
-    <div class="container-sm my-5">
-        <div id="gra" class = "mx-5" style="width: 900px; height: 500px"></div>
+    <div class ="container-fluid mt-3">
+        <div class="row">
+            <div class="col order-last"></div>
+            <div class="col">
+                <div id="gra" class = "mx-5" style="width: 900px; height: 500px"></div>
+            </div><div class="col order-first">
+            </div>                           
+        </div>            
     </div>
     <footer class="footer mt-5">
         <div class="text-center p-4" style="background-color: rgb(89, 141, 253);">

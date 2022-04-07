@@ -45,9 +45,9 @@ recognition.lang = "es-MX";
         text = text.toUpperCase();
 
         let arrayText = text.split(" ");
-
+        
         let segundoValor = parseInt(arrayText[1], 10);
-
+        console.log(segundoValor);
         if (e.results[0].isFinal) {
             if (validaGramatica(arrayText[0], segundoValor, gramatica[0], gramatica[1], gramatica[2])) {
                 $('.pote').text("Potencia: " + segundoValor);
